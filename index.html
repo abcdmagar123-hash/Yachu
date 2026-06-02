@@ -11,28 +11,9 @@
 <div class="container">
     <h1>Yachu Hair Oil</h1>
 
-    <div class="buttons">
-        <button id="viewBtn">View PDF</button>
-        <button id="downloadBtn">Download PDF</button>
-    </div>
+    <button id="downloadBtn">Download PDF</button>
 </div>
 
-<script>
-const pdfUrl = "https://github.com/abcdmagar123-hash/Yachu/releases/download/yachu/yachu.pdf";
-
-document.getElementById("viewBtn").addEventListener("click", () => {
-    window.open(pdfUrl, "_blank");
-});
-
-document.getElementById("downloadBtn").addEventListener("click", () => {
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "yachu.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-});
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
